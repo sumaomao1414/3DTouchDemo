@@ -15,6 +15,9 @@
 		2EC1AC1B1DCB3629009BFD86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EC1AC191DCB3629009BFD86 /* LaunchScreen.storyboard */; };
 		2EC1AC261DCB362A009BFD86 /* _DTouchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1AC251DCB362A009BFD86 /* _DTouchDemoTests.m */; };
 		2EC1AC311DCB362A009BFD86 /* _DTouchDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1AC301DCB362A009BFD86 /* _DTouchDemoUITests.m */; };
+		2EC1AC401DCB36EC009BFD86 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1AC3F1DCB36EC009BFD86 /* DetailViewController.m */; };
+		2EC1AC431DCB3700009BFD86 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1AC421DCB3700009BFD86 /* SearchViewController.m */; };
+		2EC1AC461DCB3715009BFD86 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC1AC451DCB3715009BFD86 /* ShareViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		2EC1AC2C1DCB362A009BFD86 /* 3DTouchDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DTouchDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC1AC301DCB362A009BFD86 /* _DTouchDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DTouchDemoUITests.m; sourceTree = "<group>"; };
 		2EC1AC321DCB362A009BFD86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC1AC3E1DCB36EC009BFD86 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2EC1AC3F1DCB36EC009BFD86 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2EC1AC411DCB3700009BFD86 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		2EC1AC421DCB3700009BFD86 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		2EC1AC441DCB3715009BFD86 /* ShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		2EC1AC451DCB3715009BFD86 /* ShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				2EC1AC0F1DCB3629009BFD86 /* AppDelegate.m */,
 				2EC1AC111DCB3629009BFD86 /* ViewController.h */,
 				2EC1AC121DCB3629009BFD86 /* ViewController.m */,
+				2EC1AC3E1DCB36EC009BFD86 /* DetailViewController.h */,
+				2EC1AC3F1DCB36EC009BFD86 /* DetailViewController.m */,
+				2EC1AC411DCB3700009BFD86 /* SearchViewController.h */,
+				2EC1AC421DCB3700009BFD86 /* SearchViewController.m */,
+				2EC1AC441DCB3715009BFD86 /* ShareViewController.h */,
+				2EC1AC451DCB3715009BFD86 /* ShareViewController.m */,
 				2EC1AC141DCB3629009BFD86 /* Main.storyboard */,
 				2EC1AC171DCB3629009BFD86 /* Assets.xcassets */,
 				2EC1AC191DCB3629009BFD86 /* LaunchScreen.storyboard */,
@@ -278,7 +293,10 @@
 			files = (
 				2EC1AC131DCB3629009BFD86 /* ViewController.m in Sources */,
 				2EC1AC101DCB3629009BFD86 /* AppDelegate.m in Sources */,
+				2EC1AC431DCB3700009BFD86 /* SearchViewController.m in Sources */,
 				2EC1AC0D1DCB3629009BFD86 /* main.m in Sources */,
+				2EC1AC461DCB3715009BFD86 /* ShareViewController.m in Sources */,
+				2EC1AC401DCB36EC009BFD86 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +447,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72GL8EDUNH;
 				INFOPLIST_FILE = 3DTouchDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tianque.-DTouchDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianque.clue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -441,8 +460,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72GL8EDUNH;
 				INFOPLIST_FILE = 3DTouchDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "tianque.-DTouchDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tianque.clue;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
